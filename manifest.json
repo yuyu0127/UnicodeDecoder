@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Unicode Decoder",
+  "version": "0.1.0",
+  "description": "/uXXXX の形式のテキストをデコードして表示します",
+  "icons": {
+    "16": "images/icon_16.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "match_about_blank": true,
+      "js": [
+        "js/decode.js"
+      ]
+    }
+  ],
+  "permissions": [
+  ]
+}
